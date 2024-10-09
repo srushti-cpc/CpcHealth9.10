@@ -14,6 +14,9 @@ const PORT = process.env.PORT || 5000;
 
 // Connect to MongoDB
 connectDB();
+app.get('/', (req, res) => {
+  res.send('Server is running');
+});
 
 // Middleware to parse JSON
 app.use(express.json());
