@@ -6,11 +6,11 @@ const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001','https://1de1-2402-a00-162-8d33-18dc-a329-fe6d-2d69.ngrok-free.app'] ,
-  credentials: true, // Allow cookies to be sent with requests
-  optionsSuccessStatus: 200 // Some legacy browsers choke on 204
-}));
+// app.use(cors({
+//   origin: ['http://localhost:3000', 'http://localhost:3001','https://1de1-2402-a00-162-8d33-18dc-a329-fe6d-2d69.ngrok-free.app'] ,
+//   credentials: true, // Allow cookies to be sent with requests
+//   optionsSuccessStatus: 200 // Some legacy browsers choke on 204
+// }));
 
 // Connect to MongoDB
 connectDB();
