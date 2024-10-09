@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "/app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.js"
+    }
+  ],
+  "env": {
+    "MY_ENV_VAR": "value" 
+  },
+  "functions": {
+    "app.js": {
+      "maxDuration": 10 
+    }
+  }
+}
