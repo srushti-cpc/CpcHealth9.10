@@ -1,0 +1,140 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #F4F8F9;
+    overflow-x: hidden;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+  }
+  h2{ margin:0; padding:0; }
+  *, :after, :before {
+    box-sizing: border-box;
+  }
+  
+.section-meals {
+    
+    padding: 1rem 0;
+  }
+  
+  .meal-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+  }
+  .wrapper {
+    width: 100%;
+    height: 550px;
+    float: none !important;
+    display: block;
+    margin: 0 auto !important;
+    padding-left: 15px;
+    max-width: 1280px;
+    padding-right: 15px;
+  }
+  .relative {
+    position: relative;
+  }
+  h2 {
+    font-weight: 500;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    line-height:1;
+    margin:0; 
+    padding:0; 
+  }
+  .HomeVideoInner { 
+    width: 100%;
+    height: 100%; 
+    position: relative;
+  }
+  .StoryVideo video { 
+    width: 100%;
+    object-fit: contain;
+  }
+  .HomeVideoTitleSection .SectionTitle {
+    width: 100%;
+    color:  rgba(19, 87, 53, 0.801);
+  }
+  .HomeVideoTitleSection p {
+    color:  rgba(19, 87, 53, 0.801);
+  }
+  
+  .HomeVideoTitleSection .SectionContent {
+    width: 100%;
+    padding-top: 240px;
+  }
+  .HomeVideoTitleSection { 
+    max-width: 630px;
+    padding: 50px 60px;
+    height: 100%; 
+    background-color: rgb(255 255 255 / 25%);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+  }
+  .HomeVideoTitleSection:not(.animate_it){
+    -webkit-clip-path: circle(100% at 50% 50%);
+    clip-path: circle(100% at 50% 50%);
+  }
+  .HomeVideoTitleSection.animate_it { 
+    animation: inView 2s; 
+    -webkit-clip-path: circle(0% at 0% 50%);
+    clip-path: circle(0% at 0% 50%);
+  }
+  .HomeVideoTitleSection.animate_reverse {
+    animation: outView 2s; 
+    -webkit-clip-path: circle(100% at 50% 50%);
+    clip-path: circle(100% at 50% 50%);
+  }
+  .StoryVideo { max-height: 800px;}
+  .StoryVideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+  .Video-playbtn { 
+    cursor: pointer; 
+    width: 89px; 
+    height: 89px; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1; border-radius: 50%;
+    background-color: rgb(221, 160, 103); 
+    backdrop-filter: blur(30px); 
+    -webkit-backdrop-filter: blur(30px);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+  @keyframes inView {
+    0% {
+      -webkit-clip-path: circle(100% at 50% 50%);
+      clip-path: circle(100% at 50% 50%);
+    }
+  
+    to {
+      -webkit-clip-path: circle(0% at 0% 50%);
+      clip-path: circle(0% at 0% 50%);
+    }
+  }
+  
+  @keyframes outView {
+    0% {
+      -webkit-clip-path: circle(0% at 0% 50%);
+      clip-path: circle(0% at 0% 50%);
+  
+    }
+  
+    to {
+      -webkit-clip-path: circle(100% at 50% 50%);
+      clip-path: circle(100% at 50% 50%);
+    }
+  }
+  
+    
